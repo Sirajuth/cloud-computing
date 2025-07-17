@@ -17,16 +17,16 @@ Aplikasi ini terdiri dari 3 container yang berjalan menggunakan `docker-compose`
 
 # Cara Menjalankan HealthyMe Web App #
 
-1. Pastikan Docker sudah terinstall pada Device Anda 
+1. Pastikan Docker dan Docker-Compose sudah terinstall pada Device Anda 
 2. Pastikan WSL sudah terinstall pada Device Anda 
 3. Buka Terminal 
 4. Download file docker-compose.yml dengan perintah:``` curl -O https://raw.githubusercontent.com/Sirajuth/cloud-computing/main/docker-compose.yml```
-5. Jalankan perintah: docker-compose up -d 
+5. Jalankan perintah: `docker-compose up -d` 
 6. Download file createdb.txt dengan perintah:``` curl -O https://raw.githubusercontent.com/Sirajuth/cloud-computing/main/createdb.txt```
 6. Buka Browser (chrome/edge/mozilla/dll)
-7. Buka phpmyadmin melalui Browser dengan mengetikan:``` localhost:8081```
+7. Buka phpmyadmin melalui Browser dengan mengetikan:```localhost:8081```
 8. Masukkan username `admin` dan password `password`
 9. Buka Tab SQL
 10. Masukkan Kode yang ada dalam file createdb.txt
-11. Buka Aplikasi Melalui Browser dengan mengetikan:``` localhost:8080```
+11. Buka Aplikasi Melalui Browser dengan mengetikan:```localhost:8080```
 12. Aplikasi siap digunakan.
