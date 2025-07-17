@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: pet082/healthyme:latest
+    image: pet082/healthyme-web:latest
     container_name: healthyme_web
     ports:
       - "8080:80"
