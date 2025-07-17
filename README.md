@@ -9,7 +9,6 @@ HealthyMe adalah aplikasi web sederhana bertema kesehatan dengan fitur seperti:
 
 # Struktur Docker #
 Aplikasi ini terdiri dari 3 container yang berjalan menggunakan `docker-compose`:
-+---------------+----------------+------------------------------------------------+
 | Service       | Port Lokal     | Keterangan                                     |
 |---------------|----------------|------------------------------------------------|
 | `web`         | 8080           | Apache + PHP container untuk frontend HTML/PHP |
@@ -18,10 +17,15 @@ Aplikasi ini terdiri dari 3 container yang berjalan menggunakan `docker-compose`
 
 # Struktur Folder Aplikasi #
 HealhtyMe/
+
 │   app.js
+
 │   Dockerfile
+
 │   index.html
+
 │   styles.css
+
 │
 ├───.vscode
 │       settings.json
