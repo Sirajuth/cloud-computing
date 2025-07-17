@@ -15,50 +15,6 @@ Aplikasi ini terdiri dari 3 container yang berjalan menggunakan `docker-compose`
 | `db`          | Internal       | MySQL container untuk menyimpan data           |
 | `phpmyadmin`  | 8081           | UI untuk akses database MySQL                  |
 
-# Struktur Folder Aplikasi #
-HealhtyMe/
-
-│   app.js
-
-│   Dockerfile
-
-│   index.html
-
-│   styles.css
-
-│
-├───.vscode
-│       settings.json
-│
-├───img/
-│       bmi.jpg
-│       calculator.jpeg
-│       education.jpg
-│       education.webp
-│       fitness.jpg
-│
-├───kalkulator/
-│       Kalkulasi.php
-│       Kalkulator.css
-│       Kalkulator.js
-│       Kalkulator.php
-│       Records.php
-│
-├───pend_kesehatan/
-│       pend_kesehatan.css
-│       pend_kesehatan.php
-│
-└───Rekomendasi/
-    │   rekomendasi.css
-    │   rekomendasi.php
-    │
-    └───img/
-            laptrilombajuang.jpg
-            metrofitness.jfif
-            oasisswimmingpool.jpg
-            pantaimarina.jpg
-
-
 # Cara Menjalankan HealthyMe Web App #
 
 1. Pastikan Docker sudah terinstall pada Device Anda 
