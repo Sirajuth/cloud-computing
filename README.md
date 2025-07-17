@@ -15,7 +15,6 @@ Aplikasi ini terdiri dari 3 container yang berjalan menggunakan `docker-compose`
 | `web`         | 8080           | Apache + PHP container untuk frontend HTML/PHP |
 | `db`          | Internal       | MySQL container untuk menyimpan data           |
 | `phpmyadmin`  | 8081           | UI untuk akses database MySQL                  |
-+---------------+----------------+------------------------------------------------+
 
 # Struktur Folder Aplikasi #
 HealhtyMe/
