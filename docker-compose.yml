@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  web:
+    image: pet082/healthyme:latest
+    container_name: healthyme_web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - healthyme_net
+
+  db:
+    image: mysql:5.7
+    container_name: healthyme_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: bmi_calculator
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - healthyme_net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: healthyme_phpmyadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password
+    depends_on:
+      - db
+    networks:
+      - healthyme_net
+
+volumes:
+  db_data:
+
+networks:
+  healthyme_net:
+    driver: bridge

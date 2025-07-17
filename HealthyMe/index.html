@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthyMe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <style>
+      .header-container {
+        background-color: #5164d1; 
+        color: white; 
+        text-align: center;
+        padding: 12px; 
+        font-size: 20px;
+        box-shadow: 2px 20px 20px 5px rgba(0,0,0,0.5);
+      }
+      </style>
+      <div class="header-container">
+        <h1>Healthy-Me</h1>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Kalkulator BMI</h2>
+          <p>Cek Status Tubuh</p>
+          <div class="services__btn"><button onclick="window.location.href='kalkulator/Kalkulator.php'">Mulai</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Pendidikan Kesehatan</h2>
+          <p>Bangun Tubuh</p>
+          <div class="services__btn"><button onclick="window.location.href='pend_kesehatan/pend_kesehatan.php'">Baca</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Rekom Tempat Olahraga</h2>
+          <p>Tempat Membangun</p>
+          <div class="services__btn"><button onclick="window.location.href='rekomendasi/rekomendasi.php'">Gass</button></div>
+        </div>
+        <div class="services__card">
+          <h2>New Features</h2>
+          <p>Unlocked</p>
+          <div class="services__btn"><button>Coming Soon</button></div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .footer__container {
+  background-color:#5164d1;
+  margin-top: -20px;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+  }
+    </style>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">juth_tha</a>
+          </div>
+          <p class="website__rights">© juth_tha 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
