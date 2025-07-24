@@ -1,17 +1,16 @@
-# Gunakan image PHP dengan Apache
 FROM php:8.1-apache
 
-# Install ekstensi PHP yang dibutuhkan
 RUN docker-php-ext-install mysqli
 
-# Salin semua file aplikasi ke folder /var/www/html/
-COPY . /var/www/html/
+RUN groupadd -r appgroup && useradd -r -g appgroup appuser
 
-# Aktifkan mod_rewrite (jika butuh)
+COPY --chown=appuser:appgroup . /var/www/html/
+
 RUN a2enmod rewrite
 
-# Set permission
-RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 755 /var/www/html
 
-# Port default Apache
+USER appuser
+
 EXPOSE 80
+
